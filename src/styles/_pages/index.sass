@@ -3,9 +3,27 @@ $color-white: #fff
 $color-yellow: #ffb600
 $color-blue: #17c2a4
 $color-cyan: #6da7d0
+$color-per: #ffdd99
+$color-black: #000000
+$color-skin: #ffdd99
 
 body 
 	margin: 
+.head
+	background: $color-purple
+	height: 10vh
+	color: $color-white
+	.menu-bar
+		ul
+			li
+				a
+					font-size: 1.5rem
+					color: $color-white
+					background: none
+					&:hover
+						background: rgba(black,0.2)
+				.active-color
+					background: rgba(black,0.2)
 .hometop
 	background: $color-purple
 	height: 100vh
@@ -61,14 +79,14 @@ body
 		&:after
 			content: ''
 			display: block
-			height: 1.2rem
+			height: 0.3em
 			width: 1.2rem
 			position: absolute
 			width: 120px
 			border: 2px solid #fff
 			background: $color-blue
 			left: 50%
-			bottom: -20px
+			bottom: -15px
 			transform: translateX(-50%)
 
 .article-2
@@ -95,14 +113,14 @@ body
 		&:after
 			content: ''
 			display: block
-			height: 1.2rem
+			height: 0.3em
 			width: 1.2rem
 			position: absolute
 			width: 120px
 			border: 2px solid #fff
 			background: $color-blue
 			left: 50%
-			bottom: -20px
+			bottom: -15px
 			transform: translateX(-50%)
 	figure
 		border-radius: 50%
@@ -111,16 +129,165 @@ body
 		justify-content: center
 
 		.nav-item
-			margin-right: .5rem
+			margin-right: 0.5rem
 			&:last-child
 				margin-right: 0
 			.nav-link
-				width: 4rem
-				height: 4rem
+				color: white 
+				font-size: 2rem
 				text-align: center
 				align-items: center
 				display: flex
-				justify-content: center
+				justify-content: center	
+
+.article-3
+	height: 100vh
+	background: $color-white
+	min-height: 200px
+	text-align: center
+	color: $main
+	padding: 5rem 0
+	h2 
+		position: relative
+		margin-bttom: 3rem
+		&:before
+			content: ''
+			display: block
+			height: 3px
+			width: 8rem
+			position: absolute
+			width: 200px
+			background: rgba($color-black,0.2)
+			left: 50%
+			bottom: -12px
+			transform: translateX(-50%)
+
+		&:after
+			content: ''
+			display: block
+			height: 0.35em
+			width: 1.2rem
+			position: absolute
+			width: 120px
+			border: 2px solid #fff
+			background: $color-blue
+			left: 50%
+			bottom: -16px
+			transform: translateX(-50%)
+	.text-percent
+		color: rgba($color-black,0.7)
+		font-size: 1.2rem
+.article-4
+	min-height: 200px
+	background: $color-skin
+	text-align: center
+	padding: 5rem 0
+	h2
+		position: relative
+		margin-bottom: 3rem
+		&:before
+			content: ''
+			display: block
+			height: 3px
+			width: 8rem
+			position: absolute
+			width: 200px
+			left: 50%
+			bottom: -12px
+			transform: translateX(-50%)
+			background: rgba($color-black,0.1)
+		&:after
+			content: ''
+			display: block
+			height: 0.4rem
+			width: 1.2rem
+			position: absolute
+			width: 120px
+			border: 2px solid #rgba($color-black,0.1)
+			background: rgba($color-black,0.3)
+			left: 50%
+			bottom: -13px
+			transform: translateX(-50%)
+
+	.nav
+		padding-left: 1rem
+		.nav-item
+			text-decoration: none
+			display: inline-block
+			background: rgba($color-black,0.3)
+			border-radius: 5px
+			.nav-link
+				color: $color-white
+				font-size: 1.5rem
+
+	.text-pc
+		font-size: 1.2rem
+	.load-button
+		text-decoration: none
+		color: $color-white
+		background: rgba($color-black,0.3)
+
+.article-5
+	min-height: 400px
+	background: $color-blue
+	text-align: center
+	padding: 5rem 0
+.article-6
+	min-height: 500px
+	background: $belize-hole
+	text-align: center
+	padding: 5rem 0
+	.form-group
+		
+		input,textarea
+			border: 0
+			background: rgba($color-black,0.2)
+			&:focus,&:active
+				background: rgba($color-black,0.6)
+				border: 0
+				color: white
+			&::-webkit-input-placeholder,
+			&::-moz-placeholder,
+			&::-ms-input-placeholder,
+			&:-moz-placeholder,
+			&::placeholder,
+				color: white
+
+
+		.textarea-size
+			width: 100%
+	h2
+		position: relative
+		margin-bottom: 3rem
+		&:before
+			content: ''
+			display: block
+			height: 3px
+			width: 8rem
+			position: absolute
+			width: 200px
+			left: 50%
+			bottom: -12px
+			transform: translateX(-50%)
+			background: rgba($color-black,0.2)
+		&:after
+			content: ''
+			display: block
+			height: 0.45rem
+			width: 1.3rem
+			position: absolute
+			width: 120px
+			border: 2px solid #rgba($color-black,0.1)
+			background: rgba($color-black,0.3)
+			left: 50%
+			bottom: -13px
+			transform: translateX(-50%)
+.send-button
+		color: $color-white
+		background: rgba($color-black,0.3)
+		&:hover
+			text-decoration: none
+			color: $color-blue
 
 
 
@@ -128,7 +295,10 @@ body
 
 
 
-.static-position
-	position: absolute
-	top: 0
-	min-height: 100vh
+
+
+
+
+
+
+

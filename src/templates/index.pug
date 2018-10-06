@@ -6,30 +6,9 @@ block variables
 	- var bodyclass = 'home'
 //- Remove fixed-top if don't want navbar alway on top add class static-postionto make navbar static -//
 block body
-	section.hometop
+	section.head
 		.container
-			//- .row
-			//- 	.col
-			//- 		nav.navbar.navbar-expand-sm.navbar-dark.fixed-top.pt-4.px-5
-			//- 			a.navbar-brand(href="#")
-			//- 				img(src="./img/logo.png", alt="logo")
-			//- 			ul.navbar-nav
-			//- 				li.nav-item.active
-			//- 					a.nav-link(href="#") HOME
-			//- 				li.nav-item
-			//- 					a.nav-link(href="#") ABOUT
-			//- 				li.nav-item
-			//- 					a.nav-link(href="#") WORK
-			//- 				li.nav-item
-			//- 					a.nav-link(href="#") BLOG
-			//- 				li.nav-item
-			//- 					a.nav-link(href="#") CONTACT
-
-
-
-
-
-			.row.fixed-top.pt-4.px-5
+			.row.pt-4.px-5
 				.col-sm-3
 					img.img-logo(src="./img/logo.png", alt="Logo")
 				.col-sm-9
@@ -45,11 +24,15 @@ block body
 								a.nav-link(href="#") BLOG
 							li.nav-item
 								a.nav-link(href="#") CONTACT
+			
+	section.hometop
+		.container
 			.row
 				.col
 					h1.mb-5 Lorem ipsum dolor sit amet consectetur adipisicing elit. Similique neque, impedit sint odit officiis quod nesciunt fuga esse ullam a quaerat possimus, eveniet id nulla ad beatae! Modi, quo rerum?
 					p
 						a.button(href="#") Watch Now
+
 	section.article-1
 		.container
 			.row
@@ -136,3 +119,92 @@ block body
 						li.nav-item
 							a.nav-link(href="#")
 								i.fa.fa-youtube
+	section.article-3
+		.container
+			.row
+				.col
+					h2 Lorem ipsum dolor sit amet consectetur adipisicing elit
+					p.pt-5.text-percent Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iusto adipisci rem deserunt corporis cum eligendi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam laboriosam optio, nesciunt quae praesentium quas eum corrupti consequatur rem exercitationem distinctio fugit impedit sit debitis error molestias sunt pariatur a.
+			.row.pt-5.py-5
+				.col-sm-3
+					figure
+
+				.col-sm-3
+					figure
+				.col-sm-3
+					figure
+				.col-sm-3
+					figure
+	section.article-4
+		.container
+			.row
+				.col
+					h2 Lorem ipsum dolor sit amet consectetur adipisicing elit
+					p.pt-5.text-percent Lorem ipsum dolor, sit amet consectetur adipisicing elit. Porro iusto adipisci rem deserunt corporis cum eligendi Lorem ipsum dolor sit amet consectetur, adipisicing elit. Aperiam laboriosam optio, nesciunt quae praesentium quas eum corrupti consequatur rem exercitationem distinctio fugit impedit sit debitis error molestias sunt pariatur a.
+			.row
+				.col-sm-4
+				.col-sm-4
+					ul.nav.pl-5
+						li.nav-item.mr-1
+							a(href="").nav-link.active ALL
+						li.nav-item.mr-1
+							a(href="").nav-link WEB
+						li.nav-item.mr-1
+							a(href="").nav-link APP
+						li.nav-item.mr-1
+							a(href="").nav-link ICON
+				.col-sm-4
+			.row.pt-5.py-5
+				.col-sm-6
+					figure
+						img(src="./img/1.png", alt="1").img-fluid.figure-img
+						figcaption.figure-caption.text-pc I CATCH YOUR EYES
+				.col-sm-6
+					figure
+						img(src="./img/2.png", alt="2").img-fluid.figure-img
+						figcaption.figure-caption.text-pc TRY NOT TO SMILE
+			.row.pt-5.py-5
+				.col-sm-6
+					figure
+						img(src="./img/3.png", alt="3").img-fluid.figure-img
+						figcaption.figure-caption.text-pc TRACH YOUR STYLE
+				.col-sm-6
+					figure
+						img(src="./img/4.png", alt="4").img-fluid.figure-img
+						figcaption.figure-caption.text-pc I FEEL YOUR VIBES
+			.row
+				.col
+					a(href='#').load-button.px-5.py-3 Want More ?
+	.article-5
+		.container
+			.row
+				.col
+
+	.article-6
+		.container
+			.row
+				.col
+					h2 Lorem ipsum dolor sit amet, consectetur adipisicing elit. Itaque, praesentium modi dolorum debitis
+					p Lorem ipsum dolor sit amet consectetur adipisicing elit. Reprehenderit porro cumque, eum enim, et explicabo dicta doloremque quos accusantium a quaerat fugit inventore odit provident quasi culpa? Eligendi, praesentium impedit.
+			.row
+				.col-sm-6
+					.form-group
+						input.form-control(type="email" aria-describedby="emailHelp" placeholder="Enter name")
+					
+				.col-sm-6
+					.form-group
+						input.form-control(type="email" aria-describedby="emailHelp" placeholder="Enter mail")
+			.row
+				.col
+					.form-group
+						textarea.text-area.textarea-size(name="", rows="10",placeholder="Your Message")
+			.row
+				.col
+					a(href='#').send-button.px-5.py-3.my-3 Send Message
+	.footer-bottom
+		.container
+			.row
+
+			.row
+				.col
+
